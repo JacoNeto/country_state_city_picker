@@ -39,12 +39,12 @@ class SelectState extends StatefulWidget {
 }
 
 class _SelectStateState extends State<SelectState> {
-  List<String> _cities = ["Choose City"];
-  List<String> _country = ["Choose Country"];
-  String _selectedCity = "Choose City";
-  String _selectedCountry = "Choose Country";
-  String _selectedState = "Choose State/Province";
-  List<String> _states = ["Choose State/Province"];
+  List<String> _cities = ["Escolher Cidade"];
+  List<String> _country = ["Escolher País"];
+  String _selectedCity = "Escolher Cidade";
+  String _selectedCountry = "Escolher País";
+  String _selectedState = "Escolher Estado/Província";
+  List<String> _states = ["Escolher Estado/Província"];
   var responses;
 
   @override
@@ -213,7 +213,7 @@ class _SelectStateState extends State<SelectState> {
                     : null);
           },
           popupProps: PopupProps.menu(
-            disabledItemFn: (value) => value == "Choose  State/Province",
+            disabledItemFn: (value) => value == "Escolher  Estado/Província",
             showSearchBox: true,
             searchFieldProps: TextFieldProps(autofocus: true),
             // showSelectedItems: true,
@@ -253,7 +253,7 @@ class _SelectStateState extends State<SelectState> {
                     : null);
           },
           popupProps: PopupProps.menu(
-            disabledItemFn: (value) => value == "Choose City",
+            disabledItemFn: (value) => value == "Escolher Cidade",
             showSearchBox: true,
             searchFieldProps: TextFieldProps(autofocus: true),
             // showSelectedItems: true,
